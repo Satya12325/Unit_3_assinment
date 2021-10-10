@@ -5,6 +5,7 @@ const resultHeading = document.getElementsByClassName('result-heading');
 const singleMeal = document.getElementById('single-meal');
 
 
+
 // search meal 
 function searchMeal(e) {
     e.preventDefault();
@@ -44,8 +45,16 @@ function searchMeal(e) {
     }
 }
 
+// onclick function
 
+function getrecipi_oftheDay(){
+    location.replace("http://127.0.0.1:5500/unit3/importexport/foodapp/get_recipi.html")
+}
+function latest(){
+    location.replace("http://127.0.0.1:5500/unit3/importexport/foodapp/latest_recipi.html")
+}
 
 //add event listnear 
 
 submit.addEventListener('submit', searchMeal);
+
