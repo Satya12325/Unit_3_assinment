@@ -1,14 +1,15 @@
-function Navbar({title = 'Title'}){
+function Navbar(){
     return `
     <div id="navbar">
             <h2>Food Panda</h2>
-            <p>${title}</p>
+            
             <div class="right">
-                <p>Sign up</p>
-                <p>Login</p>
+                <p onclick="getrecipi_oftheDay()">get receipe of the day </p>
+                <p onclick="latest()">show latest receipe</p>
             </div>
          </div>
     `
 }
 
 export default Navbar
+
